@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Why Choose AW Waterproofing Solutions | Napanee, ON</title>
+<meta name="description" content="Discover why Napanee homeowners trust AW Waterproofing Solutions. Duraflex certified, 15+ years experience, workmanship guarantee. Call (519) 278-5002.">
+<link rel="canonical" href="https://awwaterproofing.ca/why-us.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  .features-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 48px;
+  }
+
+  .stats-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 64px;
+  }
+
+  .differentiator-section {
+    background: var(--navy-mid);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .differentiator-section::before {
+    content: '';
+    position: absolute;
+    top: -200px; right: -200px;
+    width: 600px; height: 600px;
+    background: radial-gradient(circle, rgba(26,111,212,0.08) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .diff-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+    margin-top: 56px;
+  }
+
+  .diff-card {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-lg);
+    padding: 36px 32px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .diff-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--blue), var(--blue-light));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .diff-card:hover {
+    border-color: rgba(26,111,212,0.3);
+    transform: translateY(-4px);
+  }
+
+  .diff-card:hover::before { opacity: 1; }
+
+  .diff-icon {
+    width: 60px; height: 60px;
+    background: linear-gradient(135deg, rgba(26,111,212,0.2), rgba(46,135,240,0.08));
+    border: 1px solid rgba(26,111,212,0.25);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    margin-bottom: 24px;
+  }
+
+  .diff-card h3 {
+    font-size: 19px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 12px;
+    letter-spacing: -0.3px;
+  }
+
+  .diff-card p {
+    font-size: 14px;
+    color: var(--text-muted);
+    line-height: 1.75;
+  }
+
+  .duraflex-section {
+    background: var(--navy);
+  }
+
+  .duraflex-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+  }
+
+  .duraflex-visual {
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    aspect-ratio: 4/3;
+    position: relative;
+    background: linear-gradient(135deg, #0A1628 0%, #0D2040 100%);
+  }
+
+  .duraflex-anim {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+  }
+
+  /* Duraflex application visual */
+  .df-wall {
+    position: absolute;
+    inset: 0;
+    background-image:
+      repeating-linear-gradient(0deg, transparent 0px, transparent 32px, rgba(255,255,255,0.04) 32px, rgba(255,255,255,0.04) 34px),
+      repeating-linear-gradient(90deg, transparent 0px, transparent 54px, rgba(255,255,255,0.03) 54px, rgba(255,255,255,0.03) 56px);
+  }
+
+  .df-coat {
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    width: 45%;
+    background: linear-gradient(90deg,
+      rgba(26,111,212,0.95) 0%,
+      rgba(20,90,190,0.8) 60%,
+      rgba(26,111,212,0.3) 85%,
+      transparent 100%
+    );
+    filter: blur(0.5px);
+  }
+
+  .df-coat::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+      180deg,
+      transparent 0px,
+      transparent 8px,
+      rgba(255,255,255,0.04) 8px,
+      rgba(255,255,255,0.04) 9px
+    );
+  }
+
+  .df-glow {
+    position: absolute;
+    left: 0; top: 20%; bottom: 20%;
+    width: 55%;
+    background: radial-gradient(ellipse at 40% 50%, rgba(26,111,212,0.25) 0%, transparent 70%);
+    animation: dfPulse 3s ease-in-out infinite;
+  }
+
+  @keyframes dfPulse {
+    0%, 100% { opacity: 0.7; }
+    50% { opacity: 1; }
+  }
+
+  .df-applicator {
+    position: absolute;
+    top: 15%; right: 30%;
+    width: 8px; height: 70%;
+    background: linear-gradient(180deg, #9A9A9A 0%, #5A5A5A 100%);
+    border-radius: 4px;
+    transform: rotate(10deg);
+    transform-origin: top center;
+  }
+
+  .df-applicator::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: -12px;
+    width: 32px; height: 18px;
+    background: linear-gradient(180deg, #7A7A7A 0%, #4A4A4A 100%);
+    border-radius: 4px;
+  }
+
+  .df-badge {
+    position: absolute;
+    top: 20px; right: 20px;
+    background: rgba(26,111,212,0.3);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(46,135,240,0.4);
+    border-radius: 10px;
+    padding: 10px 16px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #70B0FF;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+  }
+
+  .duraflex-points {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 32px;
+  }
+
+  .duraflex-point {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-size: 15px;
+    color: var(--text-secondary);
+  }
+
+  .duraflex-check {
+    width: 24px; height: 24px;
+    background: linear-gradient(135deg, var(--blue), var(--blue-light));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    flex-shrink: 0;
+  }
+
+  .guarantee-card {
+    background: linear-gradient(135deg, rgba(26,111,212,0.12), rgba(26,111,212,0.04));
+    border: 1px solid rgba(26,111,212,0.3);
+    border-radius: var(--radius-xl);
+    padding: 48px;
+    text-align: center;
+    margin-top: 48px;
+  }
+
+  .guarantee-icon {
+    font-size: 52px;
+    margin-bottom: 20px;
+    display: block;
+  }
+
+  .guarantee-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+    letter-spacing: -1px;
+    margin-bottom: 14px;
+  }
+
+  .guarantee-card p {
+    font-size: 16px;
+    color: var(--text-muted);
+    line-height: 1.75;
+    max-width: 540px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 1024px) {
+    .diff-grid { grid-template-columns: 1fr 1fr; }
+    .stats-row { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media (max-width: 768px) {
+    .features-grid { grid-template-columns: 1fr; }
+    .diff-grid { grid-template-columns: 1fr; }
+    .stats-row { grid-template-columns: 1fr 1fr; }
+    .duraflex-inner { grid-template-columns: 1fr; gap: 48px; }
+    .guarantee-card { padding: 36px 24px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-icon">AW</div>
+      <div class="nav-logo-text">
+        <span class="nav-logo-name">AW Waterproofing</span>
+        <span class="nav-logo-sub">Solutions</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html#services">Services</a></li>
+      <li><a href="why-us.html" class="active">Why Us</a></li>
+      <li><a href="process.html">Process</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="tel:5192785002" class="nav-phone">📞 (519) 278-5002</a>
+      <a href="index.html#cta" class="btn btn-primary btn-sm">Free Estimate</a>
+      <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" onclick="toggleMenu()">✕</button>
+  <a href="index.html" onclick="toggleMenu()">Home</a>
+  <a href="index.html#services" onclick="toggleMenu()">Services</a>
+  <a href="why-us.html" onclick="toggleMenu()">Why Us</a>
+  <a href="process.html" onclick="toggleMenu()">Process</a>
+  <a href="reviews.html" onclick="toggleMenu()">Reviews</a>
+  <a href="faq.html" onclick="toggleMenu()">FAQ</a>
+  <a href="tel:5192785002" style="color:#70B0FF;">📞 (519) 278-5002</a>
+  <a href="index.html#cta" onclick="toggleMenu()" class="btn btn-primary">Get Free Estimate</a>
+</div>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="page-breadcrumb">
+      <a href="index.html">Home</a>
+      <span>/</span>
+      <span style="color:white;">Why Choose Us</span>
+    </div>
+    <div class="page-eyebrow">Our Commitment</div>
+    <h1 class="page-title">Built on <em>Trust.</em><br>Backed by Results.</h1>
+    <p class="page-subtitle">Napanee homeowners choose AW Waterproofing Solutions because we combine genuine expertise, industry-certified systems, and a relentless commitment to doing the job right — the first time.</p>
+    <div style="display:flex;gap:14px;flex-wrap:wrap;">
+      <a href="tel:5192785002" class="btn btn-primary">📞 Call (519) 278-5002</a>
+      <a href="index.html#cta" class="btn btn-outline">Get Free Estimate</a>
+    </div>
+  </div>
+</div>
+
+<!-- STATS -->
+<section style="background:var(--charcoal);padding:60px 40px;border-bottom:1px solid var(--border);">
+  <div class="container">
+    <div class="stats-row">
+      <div class="stat-badge reveal">
+        <div class="stat-badge-num">15<span>+</span></div>
+        <div class="stat-badge-desc">Years of waterproofing expertise in Eastern Ontario</div>
+      </div>
+      <div class="stat-badge reveal reveal-delay-1">
+        <div class="stat-badge-num">500<span>+</span></div>
+        <div class="stat-badge-desc">Homes successfully waterproofed across the region</div>
+      </div>
+      <div class="stat-badge reveal reveal-delay-2">
+        <div class="stat-badge-num">100<span>%</span></div>
+        <div class="stat-badge-desc">Workmanship satisfaction guarantee on every project</div>
+      </div>
+      <div class="stat-badge reveal reveal-delay-3" style="background:linear-gradient(135deg,rgba(26,111,212,0.15),rgba(26,111,212,0.05));border-color:rgba(26,111,212,0.3);">
+        <div class="stat-badge-num" style="font-size:36px;margin-bottom:10px;">Duraflex<span style="font-size:22px;"> ✓</span></div>
+        <div class="stat-badge-desc">Certified installer of Duraflex waterproofing membrane systems</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CORE FEATURES -->
+<section style="background:var(--navy);">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-eyebrow">Why We're Different</div>
+      <h2 class="section-title">What Sets AW Waterproofing Apart</h2>
+      <p class="section-subtitle">Not all waterproofing companies are created equal. Here's what distinguishes our approach — and why it matters for your home.</p>
+    </div>
+    <div class="features-grid">
+      <div class="why-feature reveal">
+        <div class="why-feature-icon">🔬</div>
+        <div class="why-feature-text">
+          <h4>Duraflex Certified Installers</h4>
+          <p>We are trained and certified to install Duraflex waterproofing membrane systems — the most advanced rubberized coating available for residential foundations. Most contractors simply cannot offer this system.</p>
+        </div>
+      </div>
+      <div class="why-feature reveal reveal-delay-1">
+        <div class="why-feature-icon">🎯</div>
+        <div class="why-feature-text">
+          <h4>Root-Cause Diagnosis First</h4>
+          <p>Every job begins with a full inspection to identify the true source of water intrusion. We don't guess, and we don't sell solutions you don't need. The right fix starts with the right diagnosis.</p>
+        </div>
+      </div>
+      <div class="why-feature reveal">
+        <div class="why-feature-icon">🛡</div>
+        <div class="why-feature-text">
+          <h4>Written Workmanship Guarantee</h4>
+          <p>We back every project with a formal written warranty. If a problem covered by our workmanship arises, we come back and make it right — no questions, no runaround.</p>
+        </div>
+      </div>
+      <div class="why-feature reveal reveal-delay-1">
+        <div class="why-feature-icon">📍</div>
+        <div class="why-feature-text">
+          <h4>Local Knowledge, Local Accountability</h4>
+          <p>We live and work in this community. We understand the soil conditions, frost lines, and drainage challenges unique to Napanee and Lennox &amp; Addington County — and we're here after the job is done.</p>
+        </div>
+      </div>
+      <div class="why-feature reveal">
+        <div class="why-feature-icon">💬</div>
+        <div class="why-feature-text">
+          <h4>Transparent Communication</h4>
+          <p>You'll receive a clear written estimate, a thorough explanation of what we're doing and why, and regular updates throughout the project. No surprises on scope or price.</p>
+        </div>
+      </div>
+      <div class="why-feature reveal reveal-delay-1">
+        <div class="why-feature-icon">🧹</div>
+        <div class="why-feature-text">
+          <h4>Respectful of Your Home</h4>
+          <p>We treat your property as our own — protecting landscaping, minimizing disruption, and leaving the work area clean when we're done. Professionalism extends to every detail.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DIFFERENTIATORS -->
+<section class="differentiator-section">
+  <div class="container">
+    <div class="reveal" style="text-align:center;">
+      <div class="section-eyebrow" style="justify-content:center;">Our Approach</div>
+      <h2 class="section-title">The AW Waterproofing Standard</h2>
+      <p class="section-subtitle" style="margin:0 auto;">Every project follows the same high standard — no shortcuts, no inferior materials, no cut corners.</p>
+    </div>
+    <div class="diff-grid">
+      <div class="diff-card reveal">
+        <div class="diff-icon">🔎</div>
+        <h3>Thorough Site Assessment</h3>
+        <p>Before any work begins, we conduct a comprehensive inspection of your foundation, grading, drainage, and interior basement conditions to build a complete picture of what's happening and why.</p>
+      </div>
+      <div class="diff-card reveal reveal-delay-1">
+        <div class="diff-icon">📋</div>
+        <h3>Tailored Solution Design</h3>
+        <p>There's no one-size-fits-all in waterproofing. We design a solution specific to your foundation type, water table, and the severity of water intrusion — not a generic package off a price list.</p>
+      </div>
+      <div class="diff-card reveal reveal-delay-2">
+        <div class="diff-icon">🏗</div>
+        <h3>Premium Materials Only</h3>
+        <p>We use Duraflex membranes, commercial-grade drain tile, and proven sump systems — because a waterproofing system is only as strong as the materials it's built with.</p>
+      </div>
+      <div class="diff-card reveal">
+        <div class="diff-icon">⚙️</div>
+        <h3>Skilled, Trained Crew</h3>
+        <p>Our team members are trained professionals, not day labourers. Proper membrane application, crack injection, and drainage installation require real skill — and we invest in ours.</p>
+      </div>
+      <div class="diff-card reveal reveal-delay-1">
+        <div class="diff-icon">✅</div>
+        <h3>Final Walkthrough Included</h3>
+        <p>We don't just pack up and leave. Every job ends with a detailed walkthrough: we show you what was done, explain how to maintain the system, and hand over your warranty documentation.</p>
+      </div>
+      <div class="diff-card reveal reveal-delay-2">
+        <div class="diff-icon">📞</div>
+        <h3>Post-Job Support</h3>
+        <p>Questions after installation? We pick up the phone. Our relationship with our customers doesn't end when the invoice is paid — we stand behind our work for the long term.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DURAFLEX SECTION -->
+<section class="duraflex-section">
+  <div class="container">
+    <div class="duraflex-inner">
+      <div class="duraflex-visual reveal">
+        <div class="duraflex-anim">
+          <div class="df-wall"></div>
+          <div class="df-coat"></div>
+          <div class="df-glow"></div>
+          <div class="df-applicator"></div>
+          <div class="df-badge">Duraflex Certified ✓</div>
+        </div>
+      </div>
+      <div class="reveal reveal-delay-1">
+        <div class="section-eyebrow">Certified System</div>
+        <h2 class="section-title">Why We Chose Duraflex</h2>
+        <p style="font-size:16px;color:var(--text-muted);line-height:1.8;margin-bottom:28px;">Duraflex is a rubberized waterproofing membrane that adheres directly to your foundation wall and remains permanently flexible — even through Canada's freeze-thaw cycles. Unlike older tar-based systems that crack and peel over time, Duraflex creates a seamless, high-adhesion barrier that lasts.</p>
+        <div class="duraflex-points">
+          <div class="duraflex-point"><div class="duraflex-check">✓</div> Stays flexible through freeze-thaw cycling</div>
+          <div class="duraflex-point"><div class="duraflex-check">✓</div> Seamless application — no seams to leak</div>
+          <div class="duraflex-point"><div class="duraflex-check">✓</div> Exceptional adhesion to concrete and block</div>
+          <div class="duraflex-point"><div class="duraflex-check">✓</div> Withstands high hydrostatic water pressure</div>
+          <div class="duraflex-point"><div class="duraflex-check">✓</div> Non-toxic, environmentally responsible formula</div>
+          <div class="duraflex-point"><div class="duraflex-check">✓</div> Certified installer training required — we have it</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="guarantee-card reveal" style="margin-top:80px;">
+      <span class="guarantee-icon">🛡</span>
+      <h3>Our Workmanship Guarantee</h3>
+      <p>Every waterproofing project we complete is backed by a written workmanship guarantee. We're confident in our materials, our methods, and our team — and we want you to be too. If there's a problem with our workmanship, we'll come back and fix it. That's our promise to every Napanee homeowner we work for.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-strip">
+  <div class="cta-strip-content reveal">
+    <div class="section-eyebrow" style="justify-content:center;">Ready to Get Started?</div>
+    <h2 class="cta-strip-title">See the AW Difference for Yourself</h2>
+    <p class="cta-strip-sub">Call us or submit a request for a free, no-obligation site assessment. We'll come out, assess the situation honestly, and give you a clear written proposal.</p>
+    <a href="tel:5192785002" class="cta-strip-phone">📞 (519) 278-5002</a>
+    <p style="font-size:14px;color:var(--text-muted);margin-bottom:32px;">Monday–Friday, 8am–6pm</p>
+    <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+      <a href="tel:5192785002" class="btn btn-primary" style="padding:16px 36px;font-size:16px;">Call Now</a>
+      <a href="index.html#cta" class="btn btn-outline" style="padding:16px 36px;font-size:16px;">Request Estimate</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">
+          <div class="nav-logo-icon">AW</div>
+          <div class="nav-logo-text">
+            <span class="nav-logo-name">AW Waterproofing Solutions</span>
+            <span class="nav-logo-sub">Napanee, Ontario</span>
+          </div>
+        </a>
+        <p>Napanee's trusted basement and foundation waterproofing specialists. Duraflex certified. Serving Lennox &amp; Addington County and surrounding communities.</p>
+        <p style="margin-top:16px;"><a href="tel:5192785002" style="color:#70B0FF;text-decoration:none;font-weight:600;">📞 (519) 278-5002</a></p>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul>
+          <li>Basement Waterproofing</li>
+          <li>Foundation Crack Repair</li>
+          <li>Interior Waterproofing</li>
+          <li>Exterior Waterproofing</li>
+          <li>Sump Pump Installation</li>
+          <li>Drainage Solutions</li>
+          <li>Duraflex Systems</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Pages</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="why-us.html">Why Choose Us</a></li>
+          <li><a href="process.html">Our Process</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Service Area</h5>
+        <ul>
+          <li>Napanee, ON</li>
+          <li>Greater Napanee</li>
+          <li>Belleville, ON</li>
+          <li>Kingston, ON</li>
+          <li>Deseronto, ON</li>
+          <li>Bath, ON</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2025 AW Waterproofing Solutions. All rights reserved.</p>
+      <p class="footer-copy">Duraflex Certified · Basement Waterproofing · Napanee, ON</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  window.addEventListener('scroll', function() {
+    document.getElementById('navbar').style.background =
+      window.scrollY > 60 ? 'rgba(10,22,40,0.95)' : 'rgba(10,22,40,0.75)';
+  });
+
+  function toggleMenu() {
+    const m = document.getElementById('mobileMenu');
+    m.classList.toggle('open');
+    document.body.style.overflow = m.classList.contains('open') ? 'hidden' : '';
+  }
+
+  const observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(e) { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
+  document.querySelectorAll('.reveal').forEach(function(el) { observer.observe(el); });
+</script>
+</body>
+</html>

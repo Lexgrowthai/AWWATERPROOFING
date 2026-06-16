@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Waterproofing Process | AW Waterproofing Solutions | Napanee, ON</title>
+<meta name="description" content="Learn exactly how AW Waterproofing Solutions protects your home — from free site assessment to final inspection. Transparent, step-by-step process. Call (519) 278-5002.">
+<link rel="canonical" href="https://awwaterproofing.ca/process.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  /* Timeline layout */
+  .timeline {
+    position: relative;
+    margin-top: 80px;
+  }
+
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 39px;
+    top: 0; bottom: 0;
+    width: 2px;
+    background: linear-gradient(180deg,
+      var(--blue) 0%,
+      rgba(26,111,212,0.5) 50%,
+      rgba(26,111,212,0.15) 100%
+    );
+  }
+
+  .timeline-item {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 40px;
+    margin-bottom: 60px;
+    position: relative;
+  }
+
+  .timeline-item:last-child { margin-bottom: 0; }
+
+  .timeline-node {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  .timeline-num {
+    width: 80px; height: 80px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--blue), var(--blue-light));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    font-weight: 800;
+    color: white;
+    flex-shrink: 0;
+    box-shadow: 0 0 0 10px rgba(26,111,212,0.1), 0 8px 32px rgba(26,111,212,0.4);
+    transition: transform 0.3s ease;
+  }
+
+  .timeline-item:hover .timeline-num { transform: scale(1.08); }
+
+  .timeline-card {
+    background: var(--card-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-lg);
+    padding: 40px 44px;
+    backdrop-filter: blur(10px);
+    transition: all 0.35s ease;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .timeline-card::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    width: 4px;
+    background: linear-gradient(180deg, var(--blue), var(--blue-light));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .timeline-item:hover .timeline-card {
+    border-color: rgba(26,111,212,0.3);
+    transform: translateX(6px);
+    box-shadow: 0 16px 48px rgba(0,0,0,0.3);
+  }
+
+  .timeline-item:hover .timeline-card::before { opacity: 1; }
+
+  .timeline-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #70B0FF;
+    margin-bottom: 10px;
+  }
+
+  .timeline-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: white;
+    letter-spacing: -0.8px;
+    margin-bottom: 16px;
+  }
+
+  .timeline-card p {
+    font-size: 16px;
+    color: var(--text-muted);
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+
+  .timeline-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 24px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+  }
+
+  .timeline-detail {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 14px;
+    color: var(--text-secondary);
+  }
+
+  .detail-dot {
+    width: 20px; height: 20px;
+    background: rgba(26,111,212,0.15);
+    border: 1px solid rgba(26,111,212,0.25);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 9px;
+    color: #70B0FF;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+
+  .timeline-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(26,111,212,0.12);
+    border: 1px solid rgba(26,111,212,0.2);
+    border-radius: 50px;
+    padding: 4px 12px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #70B0FF;
+    margin-right: 8px;
+    margin-top: 16px;
+  }
+
+  /* Services breakdown */
+  .services-breakdown {
+    background: var(--navy-mid);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .services-breakdown::after {
+    content: '';
+    position: absolute;
+    bottom: -200px; right: -200px;
+    width: 600px; height: 600px;
+    background: radial-gradient(circle, rgba(26,111,212,0.07) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .breakdown-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 56px;
+  }
+
+  .breakdown-card {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-lg);
+    padding: 32px 28px;
+    transition: all 0.3s ease;
+  }
+
+  .breakdown-card:hover {
+    border-color: rgba(26,111,212,0.3);
+    transform: translateY(-4px);
+  }
+
+  .breakdown-icon {
+    font-size: 32px;
+    margin-bottom: 18px;
+    display: block;
+  }
+
+  .breakdown-card h4 {
+    font-size: 17px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 10px;
+  }
+
+  .breakdown-card p {
+    font-size: 14px;
+    color: var(--text-muted);
+    line-height: 1.7;
+  }
+
+  .time-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 16px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #70B0FF;
+    background: rgba(26,111,212,0.1);
+    border: 1px solid rgba(26,111,212,0.2);
+    border-radius: 50px;
+    padding: 4px 12px;
+  }
+
+  /* FAQ mini */
+  .process-faq { background: var(--navy); }
+
+  .faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 48px;
+    max-width: 820px;
+  }
+
+  @media (max-width: 768px) {
+    .timeline::before { left: 27px; }
+    .timeline-item { grid-template-columns: 56px 1fr; gap: 20px; }
+    .timeline-num { width: 56px; height: 56px; font-size: 18px; }
+    .timeline-card { padding: 28px 24px; }
+    .timeline-card h3 { font-size: 22px; }
+    .breakdown-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-icon">AW</div>
+      <div class="nav-logo-text">
+        <span class="nav-logo-name">AW Waterproofing</span>
+        <span class="nav-logo-sub">Solutions</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html#services">Services</a></li>
+      <li><a href="why-us.html">Why Us</a></li>
+      <li><a href="process.html" class="active">Process</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="tel:5192785002" class="nav-phone">📞 (519) 278-5002</a>
+      <a href="index.html#cta" class="btn btn-primary btn-sm">Free Estimate</a>
+      <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" onclick="toggleMenu()">✕</button>
+  <a href="index.html" onclick="toggleMenu()">Home</a>
+  <a href="index.html#services" onclick="toggleMenu()">Services</a>
+  <a href="why-us.html" onclick="toggleMenu()">Why Us</a>
+  <a href="process.html" onclick="toggleMenu()">Process</a>
+  <a href="reviews.html" onclick="toggleMenu()">Reviews</a>
+  <a href="faq.html" onclick="toggleMenu()">FAQ</a>
+  <a href="tel:5192785002" style="color:#70B0FF;">📞 (519) 278-5002</a>
+  <a href="index.html#cta" onclick="toggleMenu()" class="btn btn-primary">Get Free Estimate</a>
+</div>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="page-breadcrumb">
+      <a href="index.html">Home</a>
+      <span>/</span>
+      <span style="color:white;">Our Process</span>
+    </div>
+    <div class="page-eyebrow">How We Work</div>
+    <h1 class="page-title">From First Call to<br><em>Dry Basement.</em></h1>
+    <p class="page-subtitle">We believe homeowners deserve total transparency. Here's exactly what happens at every stage of your waterproofing project — no mysteries, no pressure, no surprises.</p>
+    <div style="display:flex;gap:14px;flex-wrap:wrap;">
+      <a href="tel:5192785002" class="btn btn-primary">📞 Start with a Free Assessment</a>
+      <a href="reviews.html" class="btn btn-outline">Read Reviews</a>
+    </div>
+  </div>
+</div>
+
+<!-- TIMELINE -->
+<section style="background:var(--navy);">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-eyebrow">Step by Step</div>
+      <h2 class="section-title">The Complete AW Waterproofing Process</h2>
+      <p class="section-subtitle">Every project follows this proven sequence — from the moment you call to long after we pack up our equipment.</p>
+    </div>
+
+    <div class="timeline">
+
+      <div class="timeline-item reveal">
+        <div class="timeline-node">
+          <div class="timeline-num">1</div>
+        </div>
+        <div class="timeline-card">
+          <div class="timeline-label">Step One</div>
+          <h3>Free Site Assessment</h3>
+          <p>It starts with a phone call and ends with real answers. We schedule a convenient time to visit your property, walk through the basement with you, and inspect the foundation from the inside out. You'll never pay a cent for this.</p>
+          <div class="timeline-details">
+            <div class="timeline-detail"><div class="detail-dot">✓</div> Visual inspection of all basement walls, floor, and window wells</div>
+            <div class="timeline-detail"><div class="detail-dot">✓</div> Foundation exterior walk and grading assessment</div>
+            <div class="timeline-detail"><div class="detail-dot">✓</div> Evaluation of existing drainage, weeping tile, and sump systems</div>
+            <div class="timeline-detail"><div class="detail-dot">✓</div> Moisture testing and identification of all water entry points</div>
+            <div class="timeline-detail"><div class="detail-dot">✓</div> Discussion of your goals, timeline, and any concerns</div>
+          </div>
+          <div>
+            <span class="timeline-tag">⏱ ~1–2 hours</span>
+            <span class="timeline-tag">💰 Completely Free</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-node">
+          <div class="timeline-num">2</div>
+        </div>
+        <div class="timeline-card">
+          <div class="timeline-label">Step Two</div>
+          <h3>Written Proposal &amp; Honest Recommendation</h3>
+          <p>After the assessment, we prepare a clear, itemized written proposal outlining the recommended solution, scope of work, materials, and pricing. We'll walk you through it — explaining exactly what we're recommending and why — with zero pressure to sign.</p>
+          <div class="timeline-details">
+            <div class="timeline-detail"><div class="detail-dot">✓</div> Detailed scope of work with no hidden items</div>
+            <div class="timeline-detail"><div class="detail-dot">✓</div> Explanation of why each element is recommended</div>
+            <div class="timeline-detail"><div class="detail-dot">✓</div> Material specifications including Duraflex details where applicable</div>
+            <div class="timeline-detail"><div class="detail-dot">✓</div> Clear pricing — what you see is what you pay</div>
+            <div class="timeline-detail"><div class="detail-dot">✓</div> Warranty terms clearly stated in writing</div>
+          </div>
+          <div>
+            <span class="timeline-tag">📄 In Writing</span>
+            <span class="timeline-tag">🚫 No Pressure</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-node">
+          <div class="timeline-num">3</div>
+        </div>
+        <div class="timeline-card">
+          <div class="timeline-label">Step Three</div>
+          <h3>Scheduling &amp; Preparation</h3>
+          <p>Once you're ready to proceed, we schedule the project at a time that works for you. Before the crew arrives, we'll walk you through how to prepare the work area and let you know what to expect — including timeline, access needed, and any temporary disruptions.</p>
+          <div class="timeline-details">
+            <div class="timeline-detail"><div class="detail-dot">✓</div> Flexible scheduling around your availability</div>
+            <div class="timeline-detail"><div class="detail-dot">✓</div> Pre-project preparation instructions provided</div>
+            <div class="timeline-detail"><div class="detail-dot">✓</div> Permits obtained where required</div>
+            <div class="timeline-detail"><div class="detail-dot">✓</div> All materials and equipment organized before day one</div>
+          </div>
+          <div>
+            <span class="timeline-tag">📅 Flexible Booking</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-node">
+          <div class="timeline-num">4</div>
+        </div>
+        <div class="timeline-card">
+          <div class="timeline-label">Step Four</div>
+          <h3>Professional Installation</h3>
+          <p>Our trained crew executes the approved scope of work with precision — whether that's crack injection, interior drainage installation, Duraflex membrane application, exterior excavation, or sump pump installation. We work efficiently and keep you informed at every stage.</p>
+          <div class="timeline-details">
+            <div class="timeline-detail"><div class="detail-dot">✓</div> Trained, professional crew — not subcontractors</div>
+            <div class="timeline-detail"><div class="detail-dot">✓</div> Duraflex membrane applied by certified installers</div>
+            <div class="timeline-detail"><div class="detail-dot">✓</div> Dust and debris managed, property protected throughout</div>
+            <div class="timeline-detail"><div class="detail-dot">✓</div> Regular updates so you always know what's happening</div>
+            <div class="timeline-detail"><div class="detail-dot">✓</div> Work site cleaned thoroughly at end of each day</div>
+          </div>
+          <div>
+            <span class="timeline-tag">🔧 Certified Crew</span>
+            <span class="timeline-tag">💎 Premium Materials</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-node">
+          <div class="timeline-num">5</div>
+        </div>
+        <div class="timeline-card">
+          <div class="timeline-label">Step Five</div>
+          <h3>Final Inspection &amp; Walkthrough</h3>
+          <p>Before we consider the job complete, we conduct a thorough final inspection and walk you through everything that was done. We show you the waterproofing system, explain how it works, cover maintenance tips, and hand over your written warranty documentation.</p>
+          <div class="timeline-details">
+            <div class="timeline-detail"><div class="detail-dot">✓</div> Full inspection of all completed waterproofing work</div>
+            <div class="timeline-detail"><div class="detail-dot">✓</div> Personal walkthrough explaining what was installed and why</div>
+            <div class="timeline-detail"><div class="detail-dot">✓</div> Maintenance guidance for your specific system</div>
+            <div class="timeline-detail"><div class="detail-dot">✓</div> Written warranty documents provided</div>
+            <div class="timeline-detail"><div class="detail-dot">✓</div> Complete site cleanup — inside and out</div>
+          </div>
+          <div>
+            <span class="timeline-tag">✅ Satisfaction Confirmed</span>
+            <span class="timeline-tag">📜 Warranty Included</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-node">
+          <div class="timeline-num" style="background:linear-gradient(135deg,#1A7A40,#22A050);">∞</div>
+        </div>
+        <div class="timeline-card" style="border-color:rgba(26,160,80,0.2);">
+          <div class="timeline-label" style="color:#60E090;">Ongoing</div>
+          <h3>Post-Job Support</h3>
+          <p>Our commitment to you doesn't end when the invoice is paid. If you have questions about your system down the road, or if something covered by our workmanship warranty needs attention, we're one call away. We stand behind our work — for the long term.</p>
+          <div class="timeline-details">
+            <div class="timeline-detail"><div class="detail-dot" style="border-color:rgba(26,160,80,0.4);color:#60E090;">✓</div> Responsive to post-installation questions</div>
+            <div class="timeline-detail"><div class="detail-dot" style="border-color:rgba(26,160,80,0.4);color:#60E090;">✓</div> Warranty claims handled promptly and professionally</div>
+            <div class="timeline-detail"><div class="detail-dot" style="border-color:rgba(26,160,80,0.4);color:#60E090;">✓</div> Seasonal check-in available for sump pump systems</div>
+          </div>
+          <div>
+            <span class="timeline-tag" style="color:#60E090;background:rgba(26,160,80,0.1);border-color:rgba(26,160,80,0.25);">🛡 Warranty Protected</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE BREAKDOWN -->
+<section class="services-breakdown">
+  <div class="container">
+    <div class="reveal" style="text-align:center;">
+      <div class="section-eyebrow" style="justify-content:center;">What We Install</div>
+      <h2 class="section-title">Waterproofing Systems We Specialize In</h2>
+      <p class="section-subtitle" style="margin:0 auto;">The right solution depends on your situation. Here's a breakdown of the systems we install and typical project timelines.</p>
+    </div>
+    <div class="breakdown-grid">
+      <div class="breakdown-card reveal">
+        <span class="breakdown-icon">💧</span>
+        <h4>Interior Drainage System</h4>
+        <p>A channel is installed at the perimeter of your basement floor to collect and redirect water to a sump pit. Works with any foundation type. Minimal landscaping disruption.</p>
+        <div class="time-badge">⏱ Typically 2–4 days</div>
+      </div>
+      <div class="breakdown-card reveal reveal-delay-1">
+        <span class="breakdown-icon">🏗</span>
+        <h4>Exterior Waterproofing</h4>
+        <p>Excavation around the foundation allows us to apply Duraflex membrane directly to the exterior wall and install new weeping tile and drainage board. The gold standard.</p>
+        <div class="time-badge">⏱ Typically 4–7 days</div>
+      </div>
+      <div class="breakdown-card reveal reveal-delay-2">
+        <span class="breakdown-icon">🔬</span>
+        <h4>Foundation Crack Injection</h4>
+        <p>Polyurethane or epoxy is injected under pressure into cracks to create a permanent, flexible seal from inside the basement. No excavation required.</p>
+        <div class="time-badge">⏱ Typically 1 day</div>
+      </div>
+      <div class="breakdown-card reveal">
+        <span class="breakdown-icon">⚙️</span>
+        <h4>Sump Pump Installation</h4>
+        <p>We install primary submersible sump pumps and battery backup systems to automatically eject collected groundwater from your basement 24/7.</p>
+        <div class="time-badge">⏱ Typically 1 day</div>
+      </div>
+      <div class="breakdown-card reveal reveal-delay-1">
+        <span class="breakdown-icon">💎</span>
+        <h4>Duraflex Membrane Application</h4>
+        <p>Applied to exterior or interior foundation walls, Duraflex creates a rubberized waterproof barrier that flexes with the structure and resists hydrostatic pressure.</p>
+        <div class="time-badge">⏱ Part of larger project</div>
+      </div>
+      <div class="breakdown-card reveal reveal-delay-2">
+        <span class="breakdown-icon">🌊</span>
+        <h4>Drainage &amp; Weeping Tile</h4>
+        <p>New or replacement perforated drainage tile around the foundation footings, bedded in clear stone, redirects groundwater away from the structure permanently.</p>
+        <div class="time-badge">⏱ Typically 2–5 days</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS FAQ -->
+<section class="process-faq">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-eyebrow">Common Questions</div>
+      <h2 class="section-title">About the Process</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item open reveal">
+        <button class="faq-q" onclick="toggleFAQ(this)">
+          Do I need to be home during the waterproofing work?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">We recommend being present for the first day and for the final walkthrough, but you don't need to be home for every day of the project. We'll keep you updated by phone and make sure you're comfortable with arrangements before work begins.</div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" onclick="toggleFAQ(this)">
+          How disruptive is the process to my home?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">Interior waterproofing involves cutting a channel along the basement perimeter, which creates dust and noise — but we use dust barriers and clean up thoroughly each day. Exterior work is more involved but stays outside. We protect landscaping and restore disturbed areas when finished.</div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" onclick="toggleFAQ(this)">
+          Will I need to move everything out of my basement?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">For interior waterproofing, we'll need access to the perimeter of the basement floor — roughly 3–4 feet in from the walls. We'll advise you ahead of time exactly what needs to be moved. For crack injection only, minimal clearing is usually required.</div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q" onclick="toggleFAQ(this)">
+          What happens if more issues are discovered during the project?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">If we uncover something unexpected that affects the scope of work, we stop and discuss it with you before proceeding. You'll always receive a clear explanation and a written change order before any additional work is done. No surprises.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-strip">
+  <div class="cta-strip-content reveal">
+    <div class="section-eyebrow" style="justify-content:center;">Step One is Free</div>
+    <h2 class="cta-strip-title">Ready to Start the Process?</h2>
+    <p class="cta-strip-sub">Call us to book your free, no-obligation site assessment. We'll come out, walk through the situation with you honestly, and give you a clear written proposal.</p>
+    <a href="tel:5192785002" class="cta-strip-phone">📞 (519) 278-5002</a>
+    <p style="font-size:14px;color:var(--text-muted);margin-bottom:32px;">Monday–Friday, 8am–6pm</p>
+    <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+      <a href="tel:5192785002" class="btn btn-primary" style="padding:16px 36px;font-size:16px;">Call Now — It's Free</a>
+      <a href="why-us.html" class="btn btn-outline" style="padding:16px 36px;font-size:16px;">Why Choose Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">
+          <div class="nav-logo-icon">AW</div>
+          <div class="nav-logo-text">
+            <span class="nav-logo-name">AW Waterproofing Solutions</span>
+            <span class="nav-logo-sub">Napanee, Ontario</span>
+          </div>
+        </a>
+        <p>Napanee's trusted basement and foundation waterproofing specialists. Duraflex certified. Serving Lennox &amp; Addington County and surrounding communities.</p>
+        <p style="margin-top:16px;"><a href="tel:5192785002" style="color:#70B0FF;text-decoration:none;font-weight:600;">📞 (519) 278-5002</a></p>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul>
+          <li>Basement Waterproofing</li>
+          <li>Foundation Crack Repair</li>
+          <li>Interior Waterproofing</li>
+          <li>Exterior Waterproofing</li>
+          <li>Sump Pump Installation</li>
+          <li>Drainage Solutions</li>
+          <li>Duraflex Systems</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Pages</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="why-us.html">Why Choose Us</a></li>
+          <li><a href="process.html">Our Process</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Service Area</h5>
+        <ul>
+          <li>Napanee, ON</li>
+          <li>Greater Napanee</li>
+          <li>Belleville, ON</li>
+          <li>Kingston, ON</li>
+          <li>Deseronto, ON</li>
+          <li>Bath, ON</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2025 AW Waterproofing Solutions. All rights reserved.</p>
+      <p class="footer-copy">Duraflex Certified · Basement Waterproofing · Napanee, ON</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  window.addEventListener('scroll', function() {
+    document.getElementById('navbar').style.background =
+      window.scrollY > 60 ? 'rgba(10,22,40,0.95)' : 'rgba(10,22,40,0.75)';
+  });
+
+  function toggleMenu() {
+    const m = document.getElementById('mobileMenu');
+    m.classList.toggle('open');
+    document.body.style.overflow = m.classList.contains('open') ? 'hidden' : '';
+  }
+
+  function toggleFAQ(btn) {
+    const item = btn.closest('.faq-item');
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(function(el) { el.classList.remove('open'); });
+    if (!isOpen) item.classList.add('open');
+  }
+
+  const observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(e) { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.reveal').forEach(function(el) { observer.observe(el); });
+</script>
+</body>
+</html>

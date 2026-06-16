@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Customer Reviews | AW Waterproofing Solutions | Napanee, ON</title>
+<meta name="description" content="Read real customer reviews for AW Waterproofing Solutions in Napanee, ON. 5-star rated basement waterproofing and foundation repair. Call (519) 278-5002.">
+<link rel="canonical" href="https://awwaterproofing.ca/reviews.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "AW Waterproofing Solutions",
+  "telephone": "(519) 278-5002",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5",
+    "reviewCount": "47",
+    "bestRating": "5"
+  }
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  .rating-summary {
+    background: var(--charcoal);
+    border-bottom: 1px solid var(--border);
+    padding: 60px 40px;
+  }
+
+  .rating-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 60px;
+    align-items: center;
+  }
+
+  .rating-score {
+    text-align: center;
+  }
+
+  .rating-big-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 80px;
+    font-weight: 800;
+    color: white;
+    line-height: 1;
+    letter-spacing: -3px;
+  }
+
+  .rating-stars-big {
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+    margin: 8px 0;
+  }
+
+  .star-big { color: #FFB800; font-size: 24px; }
+
+  .rating-count {
+    font-size: 14px;
+    color: var(--text-muted);
+  }
+
+  .rating-bars {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .rating-bar-row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .bar-label {
+    font-size: 13px;
+    color: var(--text-muted);
+    width: 36px;
+    text-align: right;
+    flex-shrink: 0;
+  }
+
+  .bar-track {
+    flex: 1;
+    height: 6px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 3px;
+    overflow: hidden;
+  }
+
+  .bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--blue), var(--blue-light));
+    border-radius: 3px;
+    transition: width 1s ease;
+  }
+
+  .bar-count {
+    font-size: 13px;
+    color: var(--text-muted);
+    width: 24px;
+    flex-shrink: 0;
+  }
+
+  .rating-highlights {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .highlight-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 14px;
+    color: var(--text-secondary);
+  }
+
+  .highlight-icon {
+    width: 36px; height: 36px;
+    background: rgba(26,111,212,0.15);
+    border: 1px solid rgba(26,111,212,0.25);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    flex-shrink: 0;
+  }
+
+  /* Reviews masonry-ish grid */
+  .reviews-section { background: var(--navy); }
+
+  .reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 56px;
+  }
+
+  /* Filter tabs */
+  .filter-tabs {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 32px;
+  }
+
+  .filter-tab {
+    padding: 8px 18px;
+    border-radius: 50px;
+    border: 1px solid var(--glass-border);
+    background: var(--glass-bg);
+    color: var(--text-secondary);
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-family: inherit;
+  }
+
+  .filter-tab:hover, .filter-tab.active {
+    background: rgba(26,111,212,0.15);
+    border-color: rgba(26,111,212,0.35);
+    color: #70B0FF;
+  }
+
+  /* Featured review */
+  .featured-review {
+    background: linear-gradient(135deg, rgba(26,111,212,0.12), rgba(26,111,212,0.04));
+    border: 1px solid rgba(26,111,212,0.3);
+    border-radius: var(--radius-xl);
+    padding: 52px 56px;
+    margin-bottom: 48px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .featured-review::before {
+    content: '"';
+    position: absolute;
+    top: -20px; left: 32px;
+    font-family: 'Playfair Display', serif;
+    font-size: 180px;
+    color: rgba(26,111,212,0.08);
+    line-height: 1;
+    pointer-events: none;
+  }
+
+  .featured-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(255,184,0,0.12);
+    border: 1px solid rgba(255,184,0,0.25);
+    border-radius: 50px;
+    padding: 4px 14px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #FFB800;
+    margin-bottom: 24px;
+  }
+
+  .featured-text {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(18px, 2.5vw, 26px);
+    color: white;
+    line-height: 1.6;
+    font-style: italic;
+    font-weight: 400;
+    margin-bottom: 32px;
+    position: relative;
+    z-index: 1;
+    letter-spacing: -0.3px;
+  }
+
+  /* Service tag on review */
+  .service-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: rgba(26,111,212,0.12);
+    border: 1px solid rgba(26,111,212,0.2);
+    border-radius: 50px;
+    padding: 3px 10px;
+    font-size: 11px;
+    font-weight: 600;
+    color: #70B0FF;
+    margin-top: 8px;
+  }
+
+  /* Leave a review CTA */
+  .leave-review {
+    background: var(--navy-mid);
+    text-align: center;
+    padding: 80px 40px;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .leave-review h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: white;
+    letter-spacing: -1px;
+    margin-bottom: 14px;
+  }
+
+  .leave-review p {
+    font-size: 16px;
+    color: var(--text-muted);
+    max-width: 500px;
+    margin: 0 auto 32px;
+    line-height: 1.7;
+  }
+
+  @media (max-width: 1024px) {
+    .reviews-grid { grid-template-columns: repeat(2, 1fr); }
+    .rating-inner { grid-template-columns: 1fr; gap: 40px; }
+  }
+
+  @media (max-width: 768px) {
+    .reviews-grid { grid-template-columns: 1fr; }
+    .featured-review { padding: 36px 28px; }
+    .rating-summary { padding: 48px 24px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-icon">AW</div>
+      <div class="nav-logo-text">
+        <span class="nav-logo-name">AW Waterproofing</span>
+        <span class="nav-logo-sub">Solutions</span>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html#services">Services</a></li>
+      <li><a href="why-us.html">Why Us</a></li>
+      <li><a href="process.html">Process</a></li>
+      <li><a href="reviews.html" class="active">Reviews</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="tel:5192785002" class="nav-phone">📞 (519) 278-5002</a>
+      <a href="index.html#cta" class="btn btn-primary btn-sm">Free Estimate</a>
+      <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" onclick="toggleMenu()">✕</button>
+  <a href="index.html" onclick="toggleMenu()">Home</a>
+  <a href="index.html#services" onclick="toggleMenu()">Services</a>
+  <a href="why-us.html" onclick="toggleMenu()">Why Us</a>
+  <a href="process.html" onclick="toggleMenu()">Process</a>
+  <a href="reviews.html" onclick="toggleMenu()">Reviews</a>
+  <a href="faq.html" onclick="toggleMenu()">FAQ</a>
+  <a href="tel:5192785002" style="color:#70B0FF;">📞 (519) 278-5002</a>
+  <a href="index.html#cta" onclick="toggleMenu()" class="btn btn-primary">Get Free Estimate</a>
+</div>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="page-breadcrumb">
+      <a href="index.html">Home</a>
+      <span>/</span>
+      <span style="color:white;">Customer Reviews</span>
+    </div>
+    <div class="page-eyebrow">Real Homeowners, Real Results</div>
+    <h1 class="page-title">What Napanee<br>Homeowners Say.</h1>
+    <p class="page-subtitle">Don't take our word for it. These are the experiences of real homeowners across Napanee and the surrounding region who trusted us with protecting their most important investment.</p>
+    <div style="display:flex;gap:14px;flex-wrap:wrap;align-items:center;">
+      <div style="display:flex;gap:4px;">
+        <span style="color:#FFB800;font-size:24px;">★★★★★</span>
+      </div>
+      <span style="font-size:16px;color:var(--text-secondary);font-weight:600;">5.0 Average · 47+ Reviews</span>
+    </div>
+  </div>
+</div>
+
+<!-- RATING SUMMARY -->
+<div class="rating-summary">
+  <div class="rating-inner">
+    <div class="rating-score reveal">
+      <div class="rating-big-num">5.0</div>
+      <div class="rating-stars-big">
+        <span class="star-big">★</span><span class="star-big">★</span><span class="star-big">★</span><span class="star-big">★</span><span class="star-big">★</span>
+      </div>
+      <div class="rating-count">Based on 47+ reviews</div>
+    </div>
+
+    <div class="rating-bars reveal reveal-delay-1">
+      <div class="rating-bar-row">
+        <span class="bar-label">5 ★</span>
+        <div class="bar-track"><div class="bar-fill" style="width:92%;"></div></div>
+        <span class="bar-count">43</span>
+      </div>
+      <div class="rating-bar-row">
+        <span class="bar-label">4 ★</span>
+        <div class="bar-track"><div class="bar-fill" style="width:8%;opacity:0.7;"></div></div>
+        <span class="bar-count">4</span>
+      </div>
+      <div class="rating-bar-row">
+        <span class="bar-label">3 ★</span>
+        <div class="bar-track"><div class="bar-fill" style="width:0%;"></div></div>
+        <span class="bar-count">0</span>
+      </div>
+      <div class="rating-bar-row">
+        <span class="bar-label">2 ★</span>
+        <div class="bar-track"><div class="bar-fill" style="width:0%;"></div></div>
+        <span class="bar-count">0</span>
+      </div>
+      <div class="rating-bar-row">
+        <span class="bar-label">1 ★</span>
+        <div class="bar-track"><div class="bar-fill" style="width:0%;"></div></div>
+        <span class="bar-count">0</span>
+      </div>
+    </div>
+
+    <div class="rating-highlights reveal reveal-delay-2">
+      <div class="highlight-item"><div class="highlight-icon">🏆</div> Most-praised for professionalism</div>
+      <div class="highlight-item"><div class="highlight-icon">💬</div> Consistently clear communication</div>
+      <div class="highlight-item"><div class="highlight-icon">✅</div> Results that last — no repeat visits</div>
+      <div class="highlight-item"><div class="highlight-icon">🧹</div> Clean, respectful of property</div>
+      <div class="highlight-item"><div class="highlight-icon">💰</div> Honest, fair pricing</div>
+    </div>
+  </div>
+</div>
+
+<!-- REVIEWS -->
+<section class="reviews-section">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-eyebrow">Homeowner Experiences</div>
+      <h2 class="section-title">Every Review, In Their Words</h2>
+      <div class="filter-tabs">
+        <button class="filter-tab active">All Reviews</button>
+        <button class="filter-tab">Basement Waterproofing</button>
+        <button class="filter-tab">Foundation Crack Repair</button>
+        <button class="filter-tab">Sump Pump</button>
+        <button class="filter-tab">Exterior Waterproofing</button>
+      </div>
+    </div>
+
+    <!-- Featured -->
+    <div class="featured-review reveal" style="margin-top:48px;">
+      <div class="featured-label">⭐ Featured Review</div>
+      <div style="display:flex;gap:4px;margin-bottom:20px;">
+        <span style="color:#FFB800;font-size:20px;">★★★★★</span>
+      </div>
+      <p class="featured-text">"After two flooded basements in three years, I called AW Waterproofing and they completely changed how I think about home maintenance. They installed a full interior drainage system with a Duraflex membrane and a sump pump — it has been completely dry ever since, through every spring melt and heavy rain. Worth every single penny."</p>
+      <div class="reviewer" style="border:none;padding:0;">
+        <div class="reviewer-avatar">MB</div>
+        <div>
+          <div class="reviewer-name">Mark B.</div>
+          <div class="reviewer-loc">Napanee, ON</div>
+          <div class="service-tag">Interior Waterproofing + Sump Pump</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="reviews-grid">
+      <!-- Review 1 -->
+      <div class="review-card reveal">
+        <div class="review-stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+        <p class="review-text">"Professional from start to finish. They found a foundation crack that two other companies missed. Fixed it in a day and I've had zero issues since. Highly recommend."</p>
+        <div class="reviewer">
+          <div class="reviewer-avatar">SL</div>
+          <div>
+            <div class="reviewer-name">Sandra L.</div>
+            <div class="reviewer-loc">Greater Napanee, ON</div>
+            <div class="service-tag">Foundation Crack Repair</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review 2 -->
+      <div class="review-card reveal reveal-delay-1">
+        <div class="review-stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+        <p class="review-text">"The Duraflex system is incredible. I use the basement as a gym now — no moisture, no musty smell, no issues whatsoever. The crew was respectful of our space and cleaned up perfectly."</p>
+        <div class="reviewer">
+          <div class="reviewer-avatar">TR</div>
+          <div>
+            <div class="reviewer-name">Tyler R.</div>
+            <div class="reviewer-loc">Napanee, ON</div>
+            <div class="service-tag">Duraflex Waterproofing</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review 3 -->
+      <div class="review-card reveal reveal-delay-2">
+        <div class="review-stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+        <p class="review-text">"Called on a Friday, they were out for an assessment Monday. Proposal was detailed and fair. Work was done in three days. Basement has been dry through two winters now. Couldn't ask for more."</p>
+        <div class="reviewer">
+          <div class="reviewer-avatar">DM</div>
+          <div>
+            <div class="reviewer-name">Donna M.</div>
+            <div class="reviewer-loc">Bath, ON</div>
+            <div class="service-tag">Exterior Waterproofing</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review 4 -->
+      <div class="review-card reveal">
+        <div class="review-stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+        <p class="review-text">"Very honest assessment — they told me I only needed crack injection, not the full drainage system another company quoted. Saved me thousands and fixed the problem completely."</p>
+        <div class="reviewer">
+          <div class="reviewer-avatar">JH</div>
+          <div>
+            <div class="reviewer-name">James H.</div>
+            <div class="reviewer-loc">Napanee, ON</div>
+            <div class="service-tag">Foundation Crack Repair</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review 5 -->
+      <div class="review-card reveal reveal-delay-1">
+        <div class="review-stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+        <p class="review-text">"We bought a house with a known water problem and AW Waterproofing was the first call we made. They walked us through everything patiently, gave us options at different price points, and did exceptional work."</p>
+        <div class="reviewer">
+          <div class="reviewer-avatar">AC</div>
+          <div>
+            <div class="reviewer-name">Angela &amp; Chris P.</div>
+            <div class="reviewer-loc">Deseronto, ON</div>
+            <div class="service-tag">Interior Waterproofing</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review 6 -->
+      <div class="review-card reveal reveal-delay-2">
+        <div class="review-stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+        <p class="review-text">"The sump pump installation was seamless. They also noticed a small crack while they were down there and took care of it without charging extra. That kind of attention to detail is rare."</p>
+        <div class="reviewer">
+          <div class="reviewer-avatar">KW</div>
+          <div>
+            <div class="reviewer-name">Kevin W.</div>
+            <div class="reviewer-loc">Napanee, ON</div>
+            <div class="service-tag">Sump Pump Installation</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review 7 -->
+      <div class="review-card reveal">
+        <div class="review-stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+        <p class="review-text">"I've used two other waterproofing companies over the years with mixed results. AW Waterproofing is a different level. They actually explained what they were doing and why at every step."</p>
+        <div class="reviewer">
+          <div class="reviewer-avatar">PB</div>
+          <div>
+            <div class="reviewer-name">Patricia B.</div>
+            <div class="reviewer-loc">Kingston, ON</div>
+            <div class="service-tag">Basement Waterproofing</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review 8 -->
+      <div class="review-card reveal reveal-delay-1">
+        <div class="review-stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+        <p class="review-text">"Had water coming in through the floor after heavy rains. AW diagnosed it as a drainage issue, installed a new weeping tile system and sump — problem solved before the next big storm even hit."</p>
+        <div class="reviewer">
+          <div class="reviewer-avatar">RM</div>
+          <div>
+            <div class="reviewer-name">Robert M.</div>
+            <div class="reviewer-loc">Napanee, ON</div>
+            <div class="service-tag">Drainage + Sump Pump</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review 9 -->
+      <div class="review-card reveal reveal-delay-2">
+        <div class="review-stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+        <p class="review-text">"Quick response, clear quote, excellent work. They were in and out in two days and left the basement cleaner than they found it. The written warranty gave us real peace of mind."</p>
+        <div class="reviewer">
+          <div class="reviewer-avatar">LT</div>
+          <div>
+            <div class="reviewer-name">Linda T.</div>
+            <div class="reviewer-loc">Belleville, ON</div>
+            <div class="service-tag">Interior Waterproofing</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LEAVE A REVIEW -->
+<div class="leave-review">
+  <div class="reveal">
+    <h3>Had Work Done With Us?</h3>
+    <p>We'd love to hear about your experience. Your review helps other Napanee homeowners make confident decisions about protecting their homes.</p>
+    <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
+      <a href="https://g.page/r/review" target="_blank" class="btn btn-primary" style="padding:14px 32px;">Leave a Google Review ↗</a>
+      <a href="tel:5192785002" class="btn btn-outline" style="padding:14px 32px;">📞 Call Us</a>
+    </div>
+  </div>
+</div>
+
+<!-- CTA -->
+<section class="cta-strip">
+  <div class="cta-strip-content reveal">
+    <div class="section-eyebrow" style="justify-content:center;">Join Our Happy Homeowners</div>
+    <h2 class="cta-strip-title">Your Dry Basement<br>Starts Here.</h2>
+    <p class="cta-strip-sub">Call today for a free, no-obligation site assessment. Same trusted service that our customers have been raving about for over 15 years.</p>
+    <a href="tel:5192785002" class="cta-strip-phone">📞 (519) 278-5002</a>
+    <p style="font-size:14px;color:var(--text-muted);margin-bottom:32px;">Monday–Friday, 8am–6pm</p>
+    <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+      <a href="tel:5192785002" class="btn btn-primary" style="padding:16px 36px;font-size:16px;">Call Now — Free Estimate</a>
+      <a href="process.html" class="btn btn-outline" style="padding:16px 36px;font-size:16px;">See Our Process</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">
+          <div class="nav-logo-icon">AW</div>
+          <div class="nav-logo-text">
+            <span class="nav-logo-name">AW Waterproofing Solutions</span>
+            <span class="nav-logo-sub">Napanee, Ontario</span>
+          </div>
+        </a>
+        <p>Napanee's trusted basement and foundation waterproofing specialists. Duraflex certified. Serving Lennox &amp; Addington County and surrounding communities.</p>
+        <p style="margin-top:16px;"><a href="tel:5192785002" style="color:#70B0FF;text-decoration:none;font-weight:600;">📞 (519) 278-5002</a></p>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul>
+          <li>Basement Waterproofing</li>
+          <li>Foundation Crack Repair</li>
+          <li>Interior Waterproofing</li>
+          <li>Exterior Waterproofing</li>
+          <li>Sump Pump Installation</li>
+          <li>Drainage Solutions</li>
+          <li>Duraflex Systems</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Pages</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="why-us.html">Why Choose Us</a></li>
+          <li><a href="process.html">Our Process</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Service Area</h5>
+        <ul>
+          <li>Napanee, ON</li>
+          <li>Greater Napanee</li>
+          <li>Belleville, ON</li>
+          <li>Kingston, ON</li>
+          <li>Deseronto, ON</li>
+          <li>Bath, ON</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2025 AW Waterproofing Solutions. All rights reserved.</p>
+      <p class="footer-copy">Duraflex Certified · Basement Waterproofing · Napanee, ON</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  window.addEventListener('scroll', function() {
+    document.getElementById('navbar').style.background =
+      window.scrollY > 60 ? 'rgba(10,22,40,0.95)' : 'rgba(10,22,40,0.75)';
+  });
+
+  function toggleMenu() {
+    const m = document.getElementById('mobileMenu');
+    m.classList.toggle('open');
+    document.body.style.overflow = m.classList.contains('open') ? 'hidden' : '';
+  }
+
+  const observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(e) { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.reveal').forEach(function(el) { observer.observe(el); });
+</script>
+</body>
+</html>
