@@ -21,20 +21,30 @@
 <style>
   /* ── Page Hero ── */
   .page-hero {
-    background: linear-gradient(135deg, #0A1628 0%, #0D1F3C 50%, #0A1628 100%);
-    padding: 160px 40px 100px;
+    padding: 200px 40px 120px;
     text-align: center;
     position: relative;
     overflow: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background:
+      linear-gradient(180deg,
+        rgba(4,10,22,0.45) 0%,
+        rgba(4,10,22,0.25) 35%,
+        rgba(4,10,22,0.35) 65%,
+        rgba(4,10,22,0.65) 100%
+      ),
+      url('ChatGPT Image Jun 15, 2026, 09_42_25 PM.png') center center / cover no-repeat;
   }
-  .page-hero::before {
-    content: '';
-    position: absolute;
-    top: -200px; left: 50%;
-    transform: translateX(-50%);
-    width: 800px; height: 600px;
-    background: radial-gradient(ellipse, rgba(26,111,212,0.12) 0%, transparent 70%);
-    pointer-events: none;
+  .hero-content-wrap {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .page-hero-eyebrow {
     display: inline-flex;
@@ -56,6 +66,7 @@
     font-size: clamp(40px, 6vw, 72px);
     font-weight: 800;
     color: #fff;
+    text-shadow: 0 2px 24px rgba(0,0,0,0.8), 0 1px 4px rgba(0,0,0,0.9);
     line-height: 1.08;
     letter-spacing: -2px;
     margin-bottom: 24px;
@@ -73,6 +84,7 @@
     max-width: 620px;
     margin: 0 auto 40px;
     line-height: 1.75;
+    text-shadow: 0 1px 12px rgba(0,0,0,0.8);
   }
   .page-hero-actions {
     display: flex;
@@ -623,7 +635,7 @@
     .experience-grid { grid-template-columns: 1fr; }
   }
   @media (max-width: 640px) {
-    .page-hero { padding: 140px 24px 80px; }
+    .page-hero { padding: 120px 24px 80px; min-height: auto; }
     .content-section { padding: 64px 24px; }
     .content-section.alt-bg .inner { padding: 0 24px; }
     .signs-grid { grid-template-columns: 1fr; }
@@ -840,12 +852,14 @@
 
 <!-- ===== PAGE HERO ===== -->
 <header class="page-hero">
-  <div class="page-hero-eyebrow">Napanee &amp; Surrounding Areas</div>
-  <h1>Basement Waterproofing<br><em>You Can Trust</em></h1>
-  <p class="page-hero-sub">From slow seeps to serious flooding — we find what's wrong, fix it properly, and back it with a written guarantee. No pressure. No upselling. Just honest waterproofing work done right.</p>
-  <div class="page-hero-actions">
-    <a href="#free-estimate" class="btn btn-primary" style="padding:16px 36px;font-size:16px;">Get a Free Estimate →</a>
-    <a href="tel:5192785002" class="btn btn-outline" style="padding:16px 36px;font-size:16px;">📞 (519) 278-5002</a>
+  <div class="hero-content-wrap">
+    <div class="page-hero-eyebrow">Napanee &amp; Surrounding Areas</div>
+    <h1>Basement Waterproofing<br><em>You Can Trust</em></h1>
+    <p class="page-hero-sub">From slow seeps to serious flooding — we find what's wrong, fix it properly, and back it with a written guarantee. No pressure. No upselling. Just honest waterproofing work done right.</p>
+    <div class="page-hero-actions">
+      <a href="#free-estimate" class="btn btn-primary" style="padding:16px 36px;font-size:16px;">Get a Free Estimate →</a>
+      <a href="tel:5192785002" class="btn btn-outline" style="padding:16px 36px;font-size:16px;">📞 (519) 278-5002</a>
+    </div>
   </div>
 </header>
 
