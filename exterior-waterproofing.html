@@ -415,14 +415,18 @@
 <!-- Mobile Menu -->
 <div class="mobile-menu" id="mobileMenu">
   <button class="mobile-close" onclick="toggleMenu()">✕</button>
-  <a href="index.html#services" onclick="toggleMenu()">Services</a>
-  <a href="basement-waterproofing.html" onclick="toggleMenu()" style="padding-left:32px;font-size:14px;">↳ Basement Waterproofing</a>
-  <a href="basement-leaks.html" onclick="toggleMenu()" style="padding-left:32px;font-size:14px;">↳ Basement Leaks</a>
-  <a href="foundation-waterproofing.html" onclick="toggleMenu()" style="padding-left:32px;font-size:14px;">↳ Foundation Waterproofing</a>
-  <a href="foundation-crack-repair.html" onclick="toggleMenu()" style="padding-left:32px;font-size:14px;">↳ Foundation Crack Repair</a>
-  <a href="drainage-solutions.html" onclick="toggleMenu()" style="padding-left:32px;font-size:14px;">↳ Drainage Solutions</a>
-  <a href="interior-waterproofing.html" onclick="toggleMenu()" style="padding-left:32px;font-size:14px;">↳ Interior Waterproofing</a>
-  <a href="exterior-waterproofing.html" onclick="toggleMenu()" style="padding-left:32px;font-size:14px;">↳ Exterior Waterproofing</a>
+<div class="mobile-services-wrap">
+  <button class="mobile-services-toggle" onclick="toggleMobileServices(this)">Services <span class="mobile-arrow">▾</span></button>
+  <div class="mobile-services-list">
+    <a href="basement-waterproofing.html" onclick="toggleMenu()">↳ Basement Waterproofing</a>
+    <a href="basement-leaks.html" onclick="toggleMenu()">↳ Basement Leaks</a>
+    <a href="foundation-waterproofing.html" onclick="toggleMenu()">↳ Foundation Waterproofing</a>
+    <a href="foundation-crack-repair.html" onclick="toggleMenu()">↳ Foundation Crack Repair</a>
+    <a href="drainage-solutions.html" onclick="toggleMenu()">↳ Drainage Solutions</a>
+    <a href="interior-waterproofing.html" onclick="toggleMenu()">↳ Interior Waterproofing</a>
+    <a href="exterior-waterproofing.html" onclick="toggleMenu()">↳ Exterior Waterproofing</a>
+  </div>
+</div>
   <a href="why-us.html" onclick="toggleMenu()">Why Us</a>
   <a href="process.html" onclick="toggleMenu()">Process</a>
   <a href="reviews.html" onclick="toggleMenu()">Reviews</a>
