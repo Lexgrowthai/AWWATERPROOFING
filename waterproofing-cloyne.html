@@ -2561,6 +2561,12 @@
     menu.classList.toggle('open');
     document.body.style.overflow = menu.classList.contains('open') ? 'hidden' : '';
   }
+  function toggleMobileServices(btn) {
+    btn.classList.toggle('open');
+    var list = btn.nextElementSibling;
+    list.classList.toggle('open');
+  }
+
 
   // Scroll reveal
   const reveals = document.querySelectorAll('.reveal');
