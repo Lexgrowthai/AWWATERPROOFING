@@ -798,10 +798,13 @@ footer {
   backdrop-filter: blur(20px);
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 24px;
   opacity: 0;
   transition: opacity 0.3s ease;
+  overflow-y: auto;
+  padding: 80px 24px 48px;
+  box-sizing: border-box;
 }
 
 .mobile-menu.open { display: flex; opacity: 1; }
@@ -817,14 +820,15 @@ footer {
 .mobile-menu a:hover { color: #70B0FF; }
 
 .mobile-close {
-  position: absolute;
-  top: 24px; right: 24px;
+  position: fixed;
+  top: 20px; right: 24px;
   background: none;
   border: none;
   color: white;
   font-size: 28px;
   cursor: pointer;
   line-height: 1;
+  z-index: 1000;
 }
 
 /* ===== DIVIDER ===== */

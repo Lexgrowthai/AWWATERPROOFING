@@ -1440,10 +1440,13 @@
     backdrop-filter: blur(20px);
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 24px;
     opacity: 0;
     transition: opacity 0.3s ease;
+    overflow-y: auto;
+    padding: 80px 24px 48px;
+    box-sizing: border-box;
   }
 
   .mobile-menu.open {
@@ -1462,14 +1465,15 @@
   .mobile-menu a:hover { color: #70B0FF; }
 
   .mobile-close {
-    position: absolute;
-    top: 24px; right: 24px;
+    position: fixed;
+    top: 20px; right: 24px;
     background: none;
     border: none;
     color: white;
     font-size: 28px;
     cursor: pointer;
     line-height: 1;
+    z-index: 1000;
   }
 
   /* ===== RESPONSIVE ===== */
@@ -1769,6 +1773,7 @@
     </a>
 
     <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
       <li class="nav-has-dropdown"><a href="index.html#services">Services</a>
         <ul class="nav-dropdown">
           <li><a href="basement-waterproofing.html">Basement Waterproofing</a></li>
@@ -1809,6 +1814,7 @@
 <!-- Mobile Menu -->
 <div class="mobile-menu" id="mobileMenu">
   <button class="mobile-close" onclick="toggleMenu()">✕</button>
+  <a href="index.html" onclick="toggleMenu()">Home</a>
 <div class="mobile-services-wrap">
   <button class="mobile-services-toggle" onclick="toggleMobileServices(this)">Services <span class="mobile-arrow">▾</span></button>
   <div class="mobile-services-list">
