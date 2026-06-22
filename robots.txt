@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://awwaterproofing.ca/sitemap.xml
